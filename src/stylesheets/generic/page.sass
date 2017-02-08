@@ -1,3 +1,11 @@
 .page
   display: flex
-  height: 100vh
+
+  > *
+    flex: none
+
+  .carousel
+    width: calc(100% - 500px)
+
+  .section
+    width: 500px

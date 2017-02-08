@@ -20,6 +20,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var vinylBuffer = require('vinyl-buffer');
 var vinylSourceStream = require('vinyl-source-stream');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 // -------------------------------------------------- //
 // Custom Gulp Config
@@ -59,6 +61,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass())
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dev.sass))
