@@ -1,10 +1,20 @@
 .carousel
-  .slick-slide
-    position: relative
-    height: 100vh
-
-    img
-      position: absolute
+  .slick
+    &-track, &-list
       height: 100%
-      width: 100%
-      object-fit: cover
+
+    &-slide
+      position: relative
+
+      img
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        object-fit: cover
+
+  @media all and (max-width: 767px)
+    .slick
+      &-slide
+        padding-top: 10%

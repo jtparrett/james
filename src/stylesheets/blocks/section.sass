@@ -1,2 +1,13 @@
 .section
   box-shadow: 0 0 2px 3px rgba(#000, .05)
+  position: relative
+  min-height: 100vh
+  text-align: center
+  overflow: hidden
+
+  .slick
+    &-track, &-list, &-slider
+      height: 100%
+
+  @media all and (max-width: 767px)
+    min-height: 100%

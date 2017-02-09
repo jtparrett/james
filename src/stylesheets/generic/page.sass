@@ -1,5 +1,6 @@
 .page
   display: flex
+  min-height: 100vh
 
   > *
     flex: none
@@ -9,3 +10,12 @@
 
   .section
     width: 500px
+
+  @media all and (max-width: 767px)
+    flex-direction: column
+
+    .carousel, .section
+      width: 100%
+
+    .section
+      flex: 1

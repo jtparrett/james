@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import slick from 'slick-carousel/slick/slick'
 
-export default function (){
+export default function(){
   $('[data-behaviour="carousel"]').slick({
     dots: false,
     arrows: false,
