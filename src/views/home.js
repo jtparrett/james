@@ -17,11 +17,12 @@ const styles = {
     order: 1
   },
   item: {
-    flex: 1
+    flex: 1,
+    boxSizing: 'border-box'
   },
   image: {
     maxHeight: '80vh',
-    maxWidth: '100%',
+    maxWidth: '80%',
     marginLeft: 'auto',
     display: 'block'
   }
