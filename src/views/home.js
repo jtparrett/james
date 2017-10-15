@@ -11,10 +11,11 @@ const styles = {
     alignItems: 'center'
   },
   header: {
-    width: 340,
+    width: 400,
     padding: 30,
     flex: 'none',
-    order: 1
+    order: 1,
+    boxSizing: 'border-box'
   },
   item: {
     flex: 1,
@@ -25,6 +26,26 @@ const styles = {
     maxWidth: '80%',
     marginLeft: 'auto',
     display: 'block'
+  },
+  '@media (max-width: 1023px)': {
+    main: {
+      height: 'auto',
+      flexWrap: 'wrap',
+      padding: '100px 0 30px'
+    },
+    header: {
+      width: '100%',
+      padding: '30px 0',
+      order: -1
+    },
+    image: {
+      maxHeight: 'none',
+      marginRight: 'auto'
+    },
+    item: {
+      flex: 'none',
+      width: '50%'
+    }
   }
 }
 
@@ -37,10 +58,10 @@ class Home extends React.Component {
           <Header />
         </div>
         <div className={classes.item}>
-          <img src="https://picsum.photos/450/670/?random" className={classes.image} alt="Title" />
+          <img src="https://placehold.it/450x670" className={classes.image} alt="Title" />
         </div>
         <div className={classes.item}>
-          <img src="https://picsum.photos/450/670/?random" className={classes.image} alt="Title" />
+          <img src="https://placehold.it/450x670" className={classes.image} alt="Title" />
         </div>
       </main>
     )

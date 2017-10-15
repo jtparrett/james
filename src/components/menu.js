@@ -15,7 +15,7 @@ const styles = {
     flexDirection: 'column'
   },
   open: {
-    background: 'rgba(255, 255, 255, 0.9)'
+    background: 'rgba(255, 255, 255, 0.94)'
   },
   trigger: {
     flex: 'none',
@@ -26,7 +26,8 @@ const styles = {
     outline: 'none',
     pointerEvents: 'all',
     marginLeft: 'auto',
-    display: 'block'
+    display: 'block',
+    cursor: 'pointer'
   },
   icon: {
     width: 30

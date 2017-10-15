@@ -24,7 +24,7 @@ const styles = {
 const Header = ({classes}) => (
   <header className={classes.main}>
     <img src={require('../assets/logo.svg')} className={classes.logo} alt="James Parrett" />
-    <p className={classes.sub}>Photographer</p>
+    <p className={classes.sub}>- Photographer -</p>
   </header>
 )
 
