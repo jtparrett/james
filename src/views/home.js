@@ -37,10 +37,10 @@ class Home extends React.Component {
           <Header />
         </div>
         <div className={classes.item}>
-          <img src="https://picsum.photos/450/670/?random" className={classes.image} />
+          <img src="https://picsum.photos/450/670/?random" className={classes.image} alt="Title" />
         </div>
         <div className={classes.item}>
-          <img src="https://picsum.photos/450/670/?random" className={classes.image} />
+          <img src="https://picsum.photos/450/670/?random" className={classes.image} alt="Title" />
         </div>
       </main>
     )
