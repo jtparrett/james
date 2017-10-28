@@ -27,10 +27,19 @@ const styles = {
     pointerEvents: 'all',
     marginLeft: 'auto',
     display: 'block',
-    cursor: 'pointer'
-  },
-  icon: {
-    width: 30
+    cursor: 'pointer',
+    fontSize: 0,
+    color: 'transparent',
+    '&:before, &:after': {
+      content: '""',
+      display: 'block',
+      height: 3,
+      width: 30,
+      background: '#000'
+    },
+    '&:before': {
+      marginBottom: 5
+    }
   },
   overlay: {
     flex: 'none',
@@ -72,7 +81,7 @@ class Menu extends React.Component {
         [classes.open]: this.state.open
       })}>
         <button className={classes.trigger} onClick={this.toggle}>
-          <img src={require('../assets/menu.svg')} alt="Menu" className={classes.icon} />
+          Menu
         </button>
 
         { this.state.open &&

@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "classnames": "^2.2.5",
+    "jss-camel-case": "^6.0.0",
+    "jss-default-unit": "^8.0.0",
+    "jss-nested": "^6.0.1",
+    "jss-vendor-prefixer": "^7.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-jss": "^7.2.0",
