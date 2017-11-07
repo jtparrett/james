@@ -49,7 +49,7 @@ const Header = ({classes}) => (
       <a href="https://twitter.com/JamesOParrett" target="_blank" className={classes.link}>
         <img src={require('../assets/twitter.svg')} className={classes.icon} />
       </a>
-      <a href="https://www.linkedin.com/in/james-parrett-23a029120/" target="_blank" className={classes.link}>
+      <a href="https://www.linkedin.com/in/jamesparrett/" target="_blank" className={classes.link}>
         <img src={require('../assets/linked-in.svg')} className={classes.icon} />
       </a>
     </div>
