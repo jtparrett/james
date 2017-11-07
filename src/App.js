@@ -27,7 +27,6 @@ class App extends React.Component {
       <BrowserRouter>
         <JssProvider jss={jss}>
           <div className={this.props.classes.main}>
-            <Menu />
             <Route exact path="/" component={Home}/>
           </div>
         </JssProvider>

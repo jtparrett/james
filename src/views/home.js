@@ -8,6 +8,7 @@ const styles = {
   main: {
     display: 'flex',
     height: '100vh',
+    width: '100%',
     alignItems: 'center'
   },
   header: {
@@ -31,7 +32,7 @@ const styles = {
     main: {
       height: 'auto',
       flexWrap: 'wrap',
-      padding: '100px 0 30px'
+      padding: '30px 0'
     },
     header: {
       width: '100%',
@@ -58,10 +59,10 @@ class Home extends React.Component {
           <Header />
         </div>
         <div className={classes.item}>
-          <img src="https://placehold.it/450x670" className={classes.image} alt="Title" />
+          <img src={require('../assets/home-1.jpg')} className={classes.image} alt="Title" />
         </div>
         <div className={classes.item}>
-          <img src="https://placehold.it/450x670" className={classes.image} alt="Title" />
+          <img src={require('../assets/home-2.jpg')} className={classes.image} alt="Title" />
         </div>
       </main>
     )
